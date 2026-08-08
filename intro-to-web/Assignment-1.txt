@@ -1,0 +1,167 @@
+                                                                 ASSIGNMENT 1
+
+1. Explain the difference between frontend, backend, and full-stack development with
+suitable real-world examples.
+Ans. 
+ 
+2. Create a simple diagram showing how the client-server model works in web architecture.
+Ans.  The client-server model is a system in which the client sends a request to the server, and the server processes the request and sends a response back.
+             CLIENT
+        (Web Browser)
+       Chrome / Edge
+             |
+             |  Request
+             |  "Open website"
+             ↓
+        ┌─────────────┐
+        │   SERVER    │
+        │             │
+        │ Web Server  │
+        │ + Backend   │
+        └──────┬──────┘
+               |
+               |  Query / Data
+               ↓
+        ┌─────────────┐
+        │  DATABASE   │
+        │             │
+        │ Users,      │
+        │ Products,   │
+        │ Orders      │
+        └──────┬──────┘
+               |
+               |  Data
+               ↓
+        ┌─────────────┐
+        │   SERVER    │
+        └──────┬──────┘
+               |
+               |  Response
+               ↓
+             CLIENT
+        (Web Browser)
+
+
+3. Describe how a browser requests and displays a web page from a web server.
+Ans. When a user opens a website, the following steps take place:
+1.	Enter URL: The user enters a URL, such as www.example.com, in the browser. 
+2.	DNS Lookup: The browser uses DNS to find the IP address of the web server. 
+3.	Send Request: The browser sends an HTTP/HTTPS request to the web server for the required webpage. 
+4.	Server Processing: The web server receives the request, processes it, and may retrieve data from a database. 
+5.	Server Response: The server sends an HTTP/HTTPS response containing HTML and other required resources such as CSS, JavaScript, and images. 
+6.	Browser Rendering: The browser processes the received HTML, CSS, and JavaScript and renders the webpage on the screen. 
+Simple flow:
+User → Browser → DNS → Web Server → HTTP Response → Browser → Web Page
+Example: When you open an online shopping website, the browser requests the website from the server. The server processes the request and sends back the webpage and product data, which the browser displays to you.
+
+
+4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+1.	 VS Code – Used to write and edit code. 
+2.	Web Browser – Used to run and test web pages, e.g., Chrome. 
+3.	HTML – Creates the structure of a webpage. 
+4.	CSS – Adds styling and layout. 
+5.	JavaScript – Adds functionality and interactivity. 
+6.	Node.js & npm – Used to run JavaScript and manage packages. 
+7.	Git & GitHub – Used for version control and storing/sharing code. 
+8.	Local Server – Used to test websites locally. 
+
+
+5. Explain what a web server is and give examples of commonly used servers.
+Ans. A web server is software or a computer system that stores, processes, and delivers web pages to users through the internet using HTTP/HTTPS.
+Examples of Web Servers:
+•	Apache 
+•	Nginx 
+•	Microsoft IIS 
+•	Node.js 
+•	Tomcat 
+Example: When you open a website, the web server receives your browser's request and sends the required webpage back to your browser.
+
+
+6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+Ans.
+•	Frontend Developer: Creates the user interface and handles everything users see and interact with using HTML, CSS, and JavaScript. 
+•	Backend Developer: Develops server-side logic, APIs, authentication, and handles communication between the frontend and database. 
+•	Database Administrator (DBA): Manages databases, including storing, organizing, securing, backing up, and maintaining data. 
+Flow:
+Frontend → Backend → Database
+
+
+7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a
+screenshot of the setup.
+1.	Download and install Visual Studio Code (VS Code). 
+2.	 Open VS Code after installation. 
+3.	Create a folder named HTML on the Desktop. 
+4.	 Open the folder in VS Code: 
+•	File → Open Folder 
+•	Select the HTML folder. 
+5.	Create three files: 
+•	index.html 
+•	style.css 
+•	script.js 
+6.	Install useful extensions from the Extensions tab: 
+•	Live Server 
+•	Prettier - Code formatter 
+7.	Open index.html and write basic HTML code. 
+8.	 Link CSS and JavaScript files with
+9.	Right-click index.html → Open with Live Server to run the webpage in the browser. 
+ 
+
+8. Explain the difference between static and dynamic websites. Provide an example of
+each.
+Ans.
+Static Website	Dynamic Website
+Content remains mostly fixed.	Content can change based on user or data.
+Uses mainly HTML, CSS, and JavaScript.	Uses frontend + backend + database.
+Faster and simpler to develop.	More complex to develop.
+Example: Portfolio website	Example: Amazon, Instagram
+
+
+9. Research and list five web browsers. Explain how rendering engines differ between
+them.
+Ans. 
+Web Browser	Rendering Engine
+Google Chrome	Blink
+Microsoft Edge	Blink
+Mozilla Firefox	Gecko
+Apple Safari	WebKit
+Opera	Blink
+How they differ: Rendering engines convert HTML, CSS, and JavaScript into the webpage you see. Different engines may interpret web standards slightly differently, so the same website can sometimes look or behave differently across browsers.
+Main engines:
+Blink → Chrome, Edge, Opera
+Gecko → Firefox
+WebKit → Safari
+
+
+10. Draw a labeled diagram showing the basic web architecture flow — client, server,
+database, and APIs.
+Ans.              ┌──────────────┐
+             │    CLIENT    │
+             │   (Browser)  │
+             └──────┬───────┘
+                    │
+              HTTP Request
+                    ↓
+             ┌──────────────┐
+             │    SERVER    │
+             └──────┬───────┘
+                    │
+               API Request
+                    ↓
+             ┌──────────────┐
+             │   DATABASE   │
+             └──────┬───────┘
+                    │
+               Data Response
+                    ↓
+             ┌──────────────┐
+             │     API      │
+             └──────┬───────┘
+                    │
+             Server Response
+                    ↓
+
+             ┌──────────────┐
+             │    CLIENT    │
+             │  Web Browser │
+             └──────────────┘
+
