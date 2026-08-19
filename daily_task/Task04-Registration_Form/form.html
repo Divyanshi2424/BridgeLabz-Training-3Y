@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">Student Registration Form</h1>
+
+    <form>
+
+        <table border="1" width="90%" align="center" cellpadding="10" cellspacing="0">
+
+            <!-- Heading -->
+            <tr>
+                <td colspan="2" align="center">
+                    <b>Registration Form</b>
+                </td>
+            </tr>
+
+            <!-- Full Name -->
+            <tr>
+                <td width="30%">
+                    <label for="name">Full Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="email" placeholder="abc@gmail.com">
+                </td>
+            </tr>
+
+            <!-- Phone -->
+            <tr>
+                <td>
+                    <label for="phone">Phone Number</label>
+                </td>
+                <td>
+                    <input type="number" id="phone" placeholder="9876543210">
+                </td>
+            </tr>
+
+            <!-- Date of Birth -->
+            <tr>
+                <td>
+                    <label for="dob">Date of Birth</label>
+                </td>
+                <td>
+                    <input type="date" id="dob">
+                </td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <!-- Skills -->
+            <tr>
+                <td>
+                    <label>Skills</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="js">
+                    <label for="js">JavaScript</label>
+                </td>
+            </tr>
+
+            <!-- Course -->
+            <tr>
+                <td>
+                    <label for="course">Course</label>
+                </td>
+                <td>
+                    <select id="course" name="course">
+                        <option>--Select Course--</option>
+                        <option>B.Tech</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+                        <option>B.Sc</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Address -->
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <textarea id="address" rows="5" cols="35"></textarea>
+                </td>
+            </tr>
+
+            <!-- Upload Resume -->
+            <tr>
+                <td>
+                    <label for="resume">Upload Resume</label>
+                </td>
+                <td>
+                    <input type="file" id="resume">
+                </td>
+            </tr>
+
+            <!-- Buttons -->
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+
+        </table>
+        
+    </form>
+    <!--<iframe src="https://student.glauniversity.in/Main/Index" width="600" heightt="400"></iframe>--> 
+</body>
+
+</html>
