@@ -1,0 +1,135 @@
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+
+    background-color: #172554;
+    color: white;
+
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Main */
+main {
+    padding: 50px 5%;
+}
+
+/* Team Container */
+.team {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* 
+   Common card styling.
+   Padding creates space inside the card.
+   Margin creates space outside the card.
+*/
+.card {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 30px;
+    margin: 10px;
+
+    border: 2px solid #d1d5db;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+/* Card Name */
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+/* Card Role */
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+/* Card Description */
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* 
+   Highlight Team Lead card.
+   Different background and border style
+   make this card stand out.
+*/
+.card:first-child {
+    background-color: #dbeafe;
+
+    border: 3px dashed #2563eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+
+    background-color: #172554;
+    color: white;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+/* 
+   Responsive Design:
+   When screen width is below 600px,
+   cards change from row to single column.
+*/
+@media (max-width: 600px) {
+
+    .team {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}

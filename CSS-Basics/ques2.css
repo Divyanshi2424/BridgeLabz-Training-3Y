@@ -1,0 +1,280 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: #172554;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    background-color: #0f172a;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 15px;
+    border-bottom: 3px solid #93c5fd;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* ================= HOME SECTION ================= */
+
+/*
+   Linear gradient is used here.
+   The background smoothly changes from
+   one color to another.
+*/
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 10%;
+    border-bottom: 5px solid white;
+
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #2563eb,
+        #60a5fa
+    );
+
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+
+    font-size: 1.2rem;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+/*
+   Radial gradient starts from the center
+   and spreads outward.
+*/
+.about {
+    min-height: 60vh;
+
+    padding: 70px 10%;
+    margin: 0;
+
+    text-align: center;
+
+    background: radial-gradient(
+        circle,
+        #fef3c7,
+        #fde68a,
+        #f59e0b
+    );
+
+    border-bottom: 5px solid white;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 800px;
+
+    margin: 15px auto;
+
+    font-size: 1.1rem;
+}
+
+/* ================= PLACES SECTION ================= */
+
+/*
+   Fixed background creates a parallax-like effect.
+*/
+.places {
+    min-height: 100vh;
+
+    padding: 70px 10%;
+
+    text-align: center;
+
+    background-image: url("paris.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+
+    border-bottom: 5px solid white;
+}
+
+.places h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+
+    margin-bottom: 40px;
+}
+
+/* Place boxes */
+.place-box {
+    background-color: rgba(0, 0, 0, 0.65);
+
+    max-width: 600px;
+
+    margin: 20px auto;
+    padding: 25px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.place-box h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.place-box p {
+    font-size: 1rem;
+}
+
+/* ================= FOOD SECTION ================= */
+
+/*
+   Second section with fixed background.
+   This also creates a parallax-like effect.
+*/
+.food {
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 10%;
+
+    background-color: #fee2e2;
+    background-image: url("paris.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+
+    border-bottom: 5px solid white;
+}
+
+.food h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.food p {
+    max-width: 700px;
+
+    padding: 25px;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 1rem;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .about h2,
+    .places h2,
+    .food h2 {
+        font-size: 2rem;
+    }
+}
