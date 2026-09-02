@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Dashboard */
+.dashboard {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 70px 1fr;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+
+    gap: 15px;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background-color: #4a6fa5;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+/* Sidebar */
+aside {
+    grid-area: sidebar;
+    background-color: #dbe7f5;
+    padding: 25px 20px;
+}
+
+aside h2 {
+    color: #4a6fa5;
+    margin-bottom: 25px;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+aside a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside a:hover {
+    background-color: #4a6fa5;
+    color: white;
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    min-height: 170px;
+    background-color: white;
+
+    border: 1px solid #d5dce5;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card h2 {
+    color: #4a6fa5;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* One Box Spans Two Columns */
+.wide {
+    grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+    }
+
+    aside nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .wide {
+        grid-column: span 1;
+    }
+}

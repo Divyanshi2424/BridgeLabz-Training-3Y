@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 50px;
+}
+
+/* About Section */
+.about {
+    width: 50%;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.about p {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* Image Section */
+.image-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    /* Header items stack vertically */
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Main sections stack vertically */
+    main {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .about,
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
