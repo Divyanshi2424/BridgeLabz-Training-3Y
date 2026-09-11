@@ -1,0 +1,183 @@
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Main section */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* Common section styling */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* 
+   Flexbox is used to align boxes horizontally.
+   flex-wrap allows boxes to move to the next line
+   when there is not enough space.
+*/
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Common styling for border boxes */
+.box {
+    width: 220px;
+    min-height: 150px;
+    padding: 20px;
+    background-color: #fafafa;
+
+    /* Smooth transition for hover effect */
+    transition: border-color 0.3s ease;
+}
+
+
+/* Solid border */
+.solid {
+    border: 5px solid #333;
+}
+
+
+/* Dashed border */
+.dashed {
+    border: 5px dashed #333;
+}
+
+
+/* Double border */
+.double {
+    border: 5px double #333;
+}
+
+
+/* Groove border */
+.groove {
+    border: 5px groove #333;
+}
+
+
+/*
+   Hover effect:
+   When mouse moves over the box,
+   border color changes smoothly.
+*/
+.box:hover {
+    border-color: #e63946;
+}
+
+
+/* Rounded corner boxes */
+.rounded-box {
+    width: 220px;
+    min-height: 140px;
+    padding: 20px;
+    border: 4px solid #333;
+    background-color: #f9f9f9;
+
+    /* Smooth rounded-corner transition */
+    transition: border-color 0.3s ease;
+}
+
+
+/* Different border-radius values */
+.small-radius {
+    border-radius: 10px;
+}
+
+.medium-radius {
+    border-radius: 25px;
+}
+
+.large-radius {
+    border-radius: 50px;
+}
+
+
+/* Hover effect for rounded boxes */
+.rounded-box:hover {
+    border-color: #e63946;
+}
+
+
+/* Padding boxes */
+.padding-box {
+    width: 220px;
+    border: 4px solid #333;
+    background-color: #f9f9f9;
+
+    /* Smooth hover transition */
+    transition: border-color 0.3s ease;
+}
+
+
+/* Different padding values */
+.padding-small {
+    padding: 10px;
+}
+
+.padding-medium {
+    padding: 25px;
+}
+
+.padding-large {
+    padding: 40px;
+}
+
+
+/* Hover effect */
+.padding-box:hover {
+    border-color: #e63946;
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}

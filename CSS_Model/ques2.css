@@ -1,0 +1,166 @@
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* Section styling */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*
+   Flexbox is used to center the boxes
+   horizontally and vertically.
+*/
+.box-container {
+    min-height: 400px;
+
+    display: flex;
+
+    /* Horizontal center */
+    justify-content: center;
+
+    /* Vertical center */
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Common box styling */
+.box {
+    padding: 20px;
+    border: 4px solid #222;
+    text-align: center;
+
+    /*
+       max-width prevents the box from
+       becoming wider than 350px.
+    */
+    max-width: 350px;
+
+    /*
+       min-height ensures that every box
+       has at least 120px height.
+    */
+    min-height: 120px;
+}
+
+
+/* 
+   BOX 1
+   Width and height using pixels
+*/
+.box-one {
+    width: 250px;
+    height: 150px;
+    background-color: lightblue;
+}
+
+
+/*
+   BOX 2
+   Width using percentage
+   Height using em
+*/
+.box-two {
+    width: 30%;
+    height: 10em;
+    background-color: lightgreen;
+}
+
+
+/*
+   BOX 3
+   Height using viewport height
+*/
+.box-three {
+    width: 300px;
+    height: 25vh;
+    background-color: lightcoral;
+}
+
+
+/*
+   Overflow demonstration
+*/
+.overflow-section {
+    text-align: center;
+}
+
+
+/*
+   Fixed height is intentionally given
+   so that the content becomes larger
+   than the box.
+*/
+.overflow-box {
+    width: 400px;
+    max-width: 100%;
+    height: 150px;
+
+    margin: auto;
+    padding: 20px;
+
+    border: 4px solid #222;
+
+    background-color: #ffe4b5;
+
+    /*
+       Extra content will be hidden
+       when it goes outside the box.
+    */
+    overflow: hidden;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 30px auto;
+}
+
+
+
+section {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+
+
+input[type="text"] {
+    border: 3px solid blue;
+
+    padding: 10px;
+}
+
+
+
+a[href^="https"] {
+    color: green;
+
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+}
+
+input:focus {
+    outline: none;
+
+    background-color: #eee;
+}
+
+
+
+.topics li:nth-child(2) {
+    color: blue;
+
+    font-weight: bold;
+}
+.topics li:nth-child(odd) {
+    background-color: #eee;
+}
+
+
+
+.topics li::before {
+    content: "✓ ";
+
+    color: green;
+}
+
+.topics li::after {
+    content: " ★";
+
+    color: orange;
+}
+
+
+
+.parent p {
+    color: purple;
+}
+
+
+
+.parent > p {
+    background-color: #ddd;
+
+    padding: 10px;
+}
+
+.parent p + span {
+    color: red;
+
+    font-weight: bold;
+}
+
+.parent p ~ span {
+    background-color: yellow;
+
+    padding: 5px;
+}
+
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
