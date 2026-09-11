@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+main {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.example-box {
+    width: 250px;
+    min-height: 300px;
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.example-box h3 {
+    margin-bottom: 20px;
+}
+.example-box p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.example-box a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.example-box a:hover {
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    border-radius: 5px;
+}
+.example-box input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+}
+
+.example-box input:focus {
+    border-color: blue;
+    outline: none;
+    background-color: #eaf2ff;
+}
+.example-box button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.example-box button:active {
+    background-color: darkgreen;
+    transform: scale(0.95);
+}
+.example-box li:nth-child(2) {
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+}
+.example-box ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+.example-box li {
+    padding: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+
+    .examples {
+        flex-wrap: wrap;
+    }
+
+}

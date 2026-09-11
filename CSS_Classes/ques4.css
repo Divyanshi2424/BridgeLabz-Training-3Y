@@ -1,0 +1,81 @@
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-left: 5px solid orange;
+}
+#special-text {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    padding: 12px;
+    font-weight: bold;
+}
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+.parent p {
+    color: purple;
+}
+
+.parent > p {
+    background-color: #e5e7eb;
+    padding: 10px;
+}
+.parent p + span {
+    color: red;
+    font-weight: bold;
+}
+
+.parent p ~ span {
+    background-color: yellow;
+    padding: 5px;
+}
+.items {
+    padding-left: 25px;
+}
+.items li {
+    padding: 8px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

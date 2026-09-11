@@ -1,0 +1,100 @@
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.box {
+    width: 200px;
+    padding: 20px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+}
+.special {
+    background-color: #dbeafe;
+}
+#unique-box {
+    background-color: #dcfce7;
+    border: 3px solid green;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+.parent p {
+    color: purple;
+}
+.parent > p {
+    background-color: #e5e7eb;
+    padding: 10px;
+}
+.parent p + span {
+    color: red;
+    font-weight: bold;
+}
+
+.parent p ~ span {
+    background-color: yellow;
+    padding: 5px;
+}
+
+.topics {
+    padding-left: 25px;
+}
+.topics li:nth-child(2) {
+    color: blue;
+    font-weight: bold;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+}
