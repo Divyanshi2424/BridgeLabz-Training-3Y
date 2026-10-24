@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        #totalDetails {
+            background: #f0fdf4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Shopping Cart</h2>
+
+        <h3>Items</h3>
+        <ul id="cartItems"></ul>
+
+        <h3>Apply Coupon</h3>
+        <form id="couponForm">
+            <input
+                type="text"
+                id="coupon"
+                placeholder="Try SAVE20 or DISC10"
+            >
+            <button type="submit">Apply Coupon</button>
+        </form>
+
+        <p id="message"></p>
+
+        <h3>Bill Details</h3>
+        <div id="totalDetails"></div>
+    </div>
+
+    <script src="q9.js"></script>
+</body>
+</html>

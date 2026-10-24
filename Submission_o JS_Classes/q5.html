@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #cccccc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 6px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #ticket {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px dashed green;
+            border-radius: 8px;
+            display: none;
+        }
+
+        #ticket h3 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Movie Ticket Booking</h2>
+
+        <form id="bookingForm" novalidate>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <div id="nameError" class="error"></div>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <div id="emailError" class="error"></div>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" placeholder="Enter seats (1-10)">
+            <div id="seatsError" class="error"></div>
+
+            <button type="submit">Book Tickets</button>
+        </form>
+
+        <div id="ticket">
+            <h3>Booking Confirmed!</h3>
+            <p id="ticketDetails"></p>
+        </div>
+    </div>
+
+    <script src="q5.js"></script>
+</body>
+</html>
