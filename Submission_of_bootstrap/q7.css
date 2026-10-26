@@ -1,0 +1,60 @@
+/* Page styling */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+h1 {
+    color: #243b55;
+    font-weight: bold;
+}
+
+/* Task card */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Card header and footer */
+.card-header,
+.card-footer {
+    padding: 16px 20px;
+}
+
+/* Individual task */
+.list-group-item {
+    padding: 18px 20px;
+}
+
+/* Task title */
+.list-group-item h6 {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Priority badges */
+.list-group-item .badge {
+    min-width: 75px;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+/* Responsive layout */
+@media (max-width: 576px) {
+    .container {
+        padding-top: 25px !important;
+    }
+
+    .task-header {
+        align-items: flex-start !important;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .list-group-item {
+        padding: 15px 12px;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,51 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf8;
+    color: #292929;
+}
+
+/* Restaurant header */
+.restaurant-header {
+    background-color: #702c1b;
+}
+
+/* Section headings */
+h2,
+h3 {
+    color: #702c1b;
+}
+
+/* Menu table styling */
+.table {
+    background-color: #ffffff;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+/* Food image */
+.food-image {
+    width: 100%;
+    max-width: 900px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+/* Restaurant footer */
+.restaurant-footer {
+    background-color: #702c1b;
+}
+
+/* Mobile-friendly table text */
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.85rem;
+    }
+
+    main.container {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}

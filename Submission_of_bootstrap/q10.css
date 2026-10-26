@@ -1,0 +1,95 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+}
+
+/* Main heading */
+h1 {
+    color: #173b57;
+    font-weight: bold;
+}
+
+/* Carousel container */
+#travelCarousel {
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+/* Destination images */
+.destination-img {
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Caption background for readability */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 15px;
+    bottom: 30px;
+}
+
+.carousel-caption h2 {
+    font-weight: bold;
+}
+
+/* Booking progress section */
+.booking-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.booking-section h3 {
+    color: #173b57;
+    margin-bottom: 10px;
+}
+
+/* Progress bar height */
+.progress {
+    height: 28px;
+    border-radius: 20px;
+    background-color: #e1e8ee;
+}
+
+.progress-bar {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Footer */
+.travel-footer {
+    margin-top: 30px;
+}
+
+.travel-footer h4 {
+    margin-bottom: 15px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 576px) {
+    .destination-img {
+        height: 280px;
+    }
+
+    .carousel-caption {
+        padding: 8px;
+        bottom: 15px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .booking-section {
+        padding: 18px;
+    }
+}

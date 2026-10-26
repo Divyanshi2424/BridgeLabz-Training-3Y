@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore World Travels</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Q10.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Explore World</a>
+            <span class="navbar-text text-white">
+                Your Journey Begins Here
+            </span>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="container py-5">
+
+        <header class="text-center mb-4">
+            <h1>Discover Your Next Adventure</h1>
+            <p class="text-muted">
+                Explore beautiful destinations and create unforgettable memories.
+            </p>
+        </header>
+
+        <!-- Bootstrap carousel -->
+        <div
+            id="travelCarousel"
+            class="carousel slide carousel-fade shadow-lg"
+            data-bs-ride="carousel"
+            data-bs-interval="4000"
+        >
+
+            <!-- Slide indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#travelCarousel"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#travelCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#travelCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel slides -->
+            <div class="carousel-inner">
+
+                <!-- Slide 1: Bali -->
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img
+                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=80"
+                        class="d-block w-100 destination-img"
+                        alt="Tropical scenery in Bali"
+                    >
+
+                    <div class="carousel-caption">
+                        <h2>Explore Bali</h2>
+                        <p>Relax on tropical beaches and discover island culture.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Switzerland -->
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                        src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=80"
+                        class="d-block w-100 destination-img"
+                        alt="Mountain scenery in Switzerland"
+                    >
+
+                    <div class="carousel-caption">
+                        <h2>Discover Switzerland</h2>
+                        <p>Enjoy stunning mountains, lakes, and peaceful landscapes.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Paris -->
+                <div class="carousel-item" data-bs-interval="6000">
+                    <img
+                        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80"
+                        class="d-block w-100 destination-img"
+                        alt="Eiffel Tower in Paris"
+                    >
+
+                    <div class="carousel-caption">
+                        <h2>Visit Paris</h2>
+                        <p>Experience iconic landmarks, art, and French charm.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Previous and next controls -->
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#travelCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#travelCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <!-- Booking progress section -->
+        <section class="booking-section mt-5">
+            <h3>Booking Completion</h3>
+            <p class="text-muted">
+                Your sample travel booking is 70% complete.
+            </p>
+
+            <div
+                class="progress"
+                role="progressbar"
+                aria-label="Booking completion"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+            >
+                <div
+                    class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                    style="width: 70%"
+                >
+                    70%
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer with contact details -->
+    <footer class="travel-footer bg-dark text-white text-center py-4">
+        <div class="container">
+            <h4>Explore World Travels</h4>
+            <p class="mb-1">Email: hello@exploreworld.example</p>
+            <p class="mb-1">Phone: +91 98765 43210</p>
+            <p class="mb-0">
+                &copy; 2026 Explore World Travels. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle: required for carousel controls and autoplay -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

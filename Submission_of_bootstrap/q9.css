@@ -1,0 +1,72 @@
+/* Page styling */
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+h1 {
+    color: #243b55;
+    font-weight: bold;
+}
+
+/* Blog cards */
+.blog-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Card spacing */
+.blog-card .card-body {
+    padding: 25px;
+}
+
+/* Pagination links */
+.pagination .page-link {
+    padding: 10px 16px;
+    color: #0d6efd;
+}
+
+/* Active page */
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+/* Pager buttons */
+.pager .btn {
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive layout */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .blog-card .card-body {
+        padding: 18px;
+    }
+
+    .pagination .page-link {
+        padding: 8px 12px;
+    }
+
+    .pager {
+        gap: 12px;
+    }
+
+    .pager .btn {
+        font-size: 13px;
+    }
+}

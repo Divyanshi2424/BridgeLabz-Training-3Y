@@ -1,0 +1,57 @@
+/* Basic page styling */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+h1 {
+    color: #243b55;
+    font-weight: bold;
+}
+
+/* Notification card */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Card header */
+.card-header {
+    padding: 18px;
+}
+
+/* Space between alerts */
+.alert {
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* Summary well styling */
+.summary-well {
+    border-radius: 10px;
+    color: #333;
+}
+
+/* Summary heading */
+.summary-well h4 {
+    color: #243b55;
+    margin-bottom: 15px;
+}
+
+/* Responsive spacing for smaller screens */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .summary-well {
+        padding: 20px !important;
+    }
+}

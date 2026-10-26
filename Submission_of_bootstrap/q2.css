@@ -1,0 +1,42 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Profile image size */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid #e9ecef;
+}
+
+/* Main profile card */
+main section:first-child {
+    max-width: 1000px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 22px;
+    border-radius: 6px;
+}
+
+/* Contact form input focus */
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Smaller screen adjustments */
+@media (max-width: 576px) {
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    main section:first-child {
+        padding: 2rem !important;
+    }
+}

@@ -1,0 +1,66 @@
+/* Page background and font */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+h1 {
+    color: #243b55;
+}
+
+/* Pricing card styling */
+.pricing-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect: card moves up and gets a stronger shadow */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Price styling */
+.price {
+    font-weight: bold;
+}
+
+/* Smaller text beside price */
+.price small {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Features list spacing */
+.feature-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Pro card needs lighter separators */
+.pro-card .feature-list li {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Remove border from final feature */
+.feature-list li:last-child {
+    border-bottom: none;
+}
+
+/* Button hover transition */
+.pricing-card .btn {
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .pricing-card {
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
