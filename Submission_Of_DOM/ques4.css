@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 30px;
+}
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #222;
+    color: white;
+}
+
+body.blue {
+    background-color: #cce5ff;
+    color: darkblue;
+}
+
+.container {
+    padding: 30px;
+    margin: 30px;
+    border: 2px solid gray;
+}
