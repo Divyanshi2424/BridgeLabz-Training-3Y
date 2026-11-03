@@ -1,0 +1,113 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Header */
+header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+main {
+    padding: 40px;
+}
+
+/* Cheat Sheet Grid */
+.cheat-sheet {
+    display: grid;
+
+    /* 3 columns on large screens */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+/* Individual Boxes */
+.box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Box Heading */
+.box h2 {
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+/* Box Description */
+.box p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Code Example */
+.box code {
+    display: inline-block;
+    background-color: #e0f2f1;
+    color: #00695c;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.box:hover {
+    background-color: #b2dfdb;
+    transform: translateY(-5px);
+}
+
+/* Tablet Layout */
+@media screen and (max-width: 900px) {
+
+    .cheat-sheet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 700px) {
+
+    main {
+        padding: 20px;
+    }
+
+    .cheat-sheet {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+}
+    
+/* Footer */
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

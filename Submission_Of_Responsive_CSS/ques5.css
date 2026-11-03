@@ -1,0 +1,147 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #263238;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+main {
+    padding: 40px;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Profile Cards */
+.profile-card {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+
+    flex: 1;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    /* Fade-in Animation */
+    animation: fadeIn 1s ease-in;
+
+    /* Smooth Hover Transition */
+    transition: transform 0.4s ease;
+}
+
+/* Profile Images */
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    transition: filter 0.4s ease;
+}
+
+/* Different Image Filters */
+.profile-card:nth-child(1) img {
+    filter: grayscale(100%);
+}
+
+.profile-card:nth-child(2) img {
+    filter: sepia(100%);
+}
+
+.profile-card:nth-child(3) img {
+    filter: brightness(70%);
+}
+
+/* Card Heading */
+.profile-card h2 {
+    margin-top: 15px;
+    color: #263238;
+}
+
+.profile-card h3 {
+    margin-top: 8px;
+    color: #00796b;
+}
+
+/* Paragraph */
+.profile-card p {
+    margin-top: 12px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card:hover img {
+    filter: none;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #263238;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 400px;
+        flex: none;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+}

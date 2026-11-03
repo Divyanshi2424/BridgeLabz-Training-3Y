@@ -1,0 +1,130 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+
+    /* Arrange page vertically */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #263238;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #80cbc4;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+main h1 {
+    color: #263238;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* Feature Boxes */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Individual Box */
+.feature-box {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    flex: 1;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease;
+}
+
+.feature-box h2 {
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 750px) {
+
+    /* Stack feature boxes vertically */
+    .features {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

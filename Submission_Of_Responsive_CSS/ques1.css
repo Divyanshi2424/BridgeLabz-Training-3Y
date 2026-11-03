@@ -1,0 +1,105 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Gallery Cards */
+.gallery-item {
+    background-color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Images */
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: filter 0.5s ease;
+}
+
+/* Different Filters */
+.gallery-item:nth-child(1) img {
+    filter: blur(3px);
+}
+
+.gallery-item:nth-child(2) img {
+    filter: grayscale(100%);
+}
+
+.gallery-item:nth-child(3) img {
+    filter: sepia(100%);
+}
+
+.gallery-item:nth-child(4) img {
+    filter: brightness(150%);
+}
+
+.gallery-item:nth-child(5) img {
+    filter: contrast(200%);
+}
+
+.gallery-item:nth-child(6) img {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove Filter on Hover */
+.gallery-item img:hover {
+    filter: none;
+}
+
+/* Image Captions */
+.gallery-item h3 {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #263238;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+}
